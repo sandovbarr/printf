@@ -1,0 +1,39 @@
+.TH _printf [_printf] [3] [Cohort_11] [version1.0] [man_page]
+.SH NAME
+.B _printf
+
+.SH SYNOPSIS
+- prints the strings with format [%] especificator.
+#include "holberton.h"
+int _printf(const char *format, ...);
+.SH DESCRIPTION
+.PP The function _printf() produce output according to a format as described below.
+_printf return the total of bytes printed in the buffer, using the system call write.
+.SH OPTIONS
+.PP The byte following the % format specifier allows printing in different formats the variable passed by argument.
+
+.IP
+%c Prints in char the arguments passed as variable.
+.IP
+%s The strisg are evaluated
+.IP
+%i Print in integer format.
+.IP
+%d Print in integer format.
+.IP
+%o Print in octal format.
+.IP
+%b Allows convert nd print unsigned int to binary.
+.IP
+%x Print the given argument in a hexadecimal.
+.IP
+%X Print the given argument in a hexadecimal with the alpha characters in uppercase.
+.IP
+%%  If the next byte at the format specificator is other same, the first specificator is nulled and printed
+
+
+
+.SH RETURN
+The function will returen the number of characters printed. If unsuccessful the function will return null.
+.SH AUTHOR
+Jefferson Leon & Fernando Sandoval in Holberton School Cohort 11 0120 BOG
